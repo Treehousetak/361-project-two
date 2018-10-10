@@ -23,6 +23,11 @@ p {
   padding-bottom: 1.222em;
 }
 
+#navigation a[href="#content"]{
+  color: black;
+  text-decoration: none;
+}
+
 /*research git add --patch */
 
 h1,h2,h3,h4,h5,h6{
