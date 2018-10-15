@@ -105,7 +105,10 @@ li {
   padding-bottom: 1.222em;
 }
 
+/* media query example*/
+@media screen and (min-width: 600px) {
 
+}
 
  .     /*insert name of text here
  {
