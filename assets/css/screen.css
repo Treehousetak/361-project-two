@@ -14,19 +14,74 @@ Visit www.ModularScale.com  */
 
 html {       /* 18px/16px=1.125em */
   font-size: 1.125em; /* 16px or 1em is the default web broweser font size */
-  line height: 1.222em; /*or 120% */; /* 1 is the default */
+  line height: 24px; /*or 120% */; /* 1 is the default */
+  font-family: "Merriweather", Helvetica, Arial, sans-serif;
   padding: 1.222em 1em;
 }
+
+@media screen and (min-width: 630px){
+  html{
+    padding: 5%;
+    font-size: 20px;
+  }
+}
+/*cssfontstack.com , google fonts*/
 
 p {
   text-indent: 1em;
   padding-bottom: 1.222em;
 }
 
+/* Layout (id selectors; width/height, position, felxbox, grid) */
+
+/* Module/Modular Section (class selectors; descendent slectors; repeating specific styles) */
+
 #navigation a[href="#content"]{
   color: black;
   text-decoration: none;
 }
+
+/* Responsive Image Styles */
+img {
+  display: block;
+  max-width: 100%;      /* Can use px or em etc. */
+}
+
+figure {
+
+}
+
+/* Prefer to use percentages or em */
+#content {
+  width: 80%;
+  position: relative;
+}
+
+ul.gallery li{
+  background: yellow;
+  border: 0.625em solid blue;
+  padding: 10%;
+  margin: 10%;
+}
+
+ul.gallery{
+  background: red;
+  display: flex; /*use this maybe? */
+  /*overflow: auto;*/
+}
+
+/* caniuse site for websites */
+
+ul.gallery{
+  display
+}
+
+#footer {
+  /*clear: both;*/
+  /*float: none;*/
+}
+
+/* State (repeate the structure above; media queries, Javascript-dependent styles) */
 
 /*research git add --patch */
 
