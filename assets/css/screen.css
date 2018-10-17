@@ -105,11 +105,37 @@ li {
   padding-bottom: 1.222em;
 }
 
-/* media query example*/
-@media screen and (min-width: 600px) {
+img{
+  display: block;
+  max-width: 100%
 
 }
 
+/* media query example*/
+@media screen and (min-width: 600px) {
+  .images li {
+    float: left;
+    width: 50%;
+  }
+  figcaption{
+    clear: both;
+  }
+  @@supports (display: flex) {
+    .images {
+      display: flex;
+
+    }
+    .images li {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+.images {
+  background: #222;
+  overflow: auto;
+  padding: 5px;
+}
  .     /*insert name of text here
  {
  text-indent: 0;
