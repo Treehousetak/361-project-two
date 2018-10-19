@@ -16,11 +16,68 @@ html {
   font-size: 1.125em;
   line height: 120%;
   padding: 1.222em 1em;
-  font-family: "Crimson text", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
-
+p {
+  text-indent: 3em;
+}
 ul {
   color: black;
   padding: 1.222em;
   list-style-type: circle;
+}
+
+ol {
+    list-style-type: square;
+    padding: 0.625em;
+}
+footer{
+  float: left;
+  font-size: 0.5625em;
+  font-stretch: condensed;
+  padding: 1em;
+}
+h2,h3,h4,h5,h6{
+  padding: 0.625em 1.222em 0.625em 0em
+}
+
+h1{
+  font-size: 2.8125em;
+  font-weight: 900;
+  padding-top: 1.222em;
+  padding-bottom: 1.222em;
+}
+h2{
+  font-size: 1.6875em;
+  font-weight: 700;
+
+}
+h3{
+  font-size: 1.40625em;
+  font-weight: 400;
+}
+
+#monday{
+  float: left;
+  padding: 1.222em 1em;
+}
+#tuesday{
+  float: left;
+  padding: 1.222em 1em;
+}
+#wednesday{
+  float: left;
+  padding: 1.222em 1em;
+}
+#thursday{
+  float: left;
+  padding: 1.222em 1em;
+}
+#friday{
+  float: left;
+  padding: 1.222em 1em;
+}
+#aclasses{
+  display:flex;
+  float: left;
 }
