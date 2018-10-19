@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+/* Read Mark Hurst */
+/* 1em = 18px
+1 lead = 22px
+Visit www.ModularScale.com  */
+
+html {       /* 18px/16px=1.125em */
+  font-size: 1.125em; /* 16px or 1em is the default web broweser font size */
+  line height: 24px; /*or 120% */; /* 1 is the default */
+  font-family: "Merriweather", Helvetica, Arial, sans-serif;
+  padding: 1.222em 1em;
+}
+
+@media screen and (min-width: 630px){
+  html{
+    padding: 5%;
+    font-size: 20px;
+  }
+}
+/*cssfontstack.com , google fonts*/
+
+p {
+  text-indent: 1em;
+  padding-bottom: 1.222em;
+}
+
+/* Layout (id selectors; width/height, position, felxbox, grid) */
+
+/* Module/Modular Section (class selectors; descendent slectors; repeating specific styles) */
+
+#navigation a[href="#content"]{
+  color: black;
+  text-decoration: none;
+}
+
+/* Responsive Image Styles */
+img {
+  display: block;
+  max-width: 100%;      /* Can use px or em etc. */
+}
+
+figure {
+
+}
+
+/* Prefer to use percentages or em */
+#content {
+  width: 80%;
+  position: relative;
+}
+
+ul.gallery li{
+  background: yellow;
+  border: 0.625em solid blue;
+  padding: 10%;
+  margin: 10%;
+}
+
+ul.gallery{
+  background: red;
+  display: flex; /*use this maybe? */
+  /*overflow: auto;*/
+}
+
+/* caniuse site for websites */
+
+ul.gallery{
+  display
+}
+
+#footer {
+  /*clear: both;*/
+  /*float: none;*/
+}
+
+/* State (repeate the structure above; media queries, Javascript-dependent styles) */
+
+/*research git add --patch */
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
+
+h2 + p,
+h3 + p,
+h4 + p,
+ {
+
+}
+
+ul {
+  color: blue;
+  padding: 1.222em;
+  list-style-type: square;
+}
+li {
+  padding-bottom: 1.222em;
+}
+
+img{
+  display: block;
+  max-width: 100%
+
+}
+
+/* media query example*/
+@media screen and (min-width: 600px) {
+  .images li {
+    float: left;
+    width: 50%;
+  }
+  figcaption{
+    clear: both;
+  }
+  @@supports (display: flex) {
+    .images {
+      display: flex;
+
+    }
+    .images li {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+.images {
+  background: #222;
+  overflow: auto;
+  padding: 5px;
+}
+ .     /*insert name of text here
+ {
+ text-indent: 0;
+} */
