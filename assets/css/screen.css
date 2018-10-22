@@ -81,3 +81,9 @@ h3{
   display:flex;
   float: left;
 }
+.fcar,.tcar{
+  width: 25%;
+}
+.dcar{
+  width: 35%;
+}
