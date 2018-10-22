@@ -21,16 +21,15 @@ html {
 p {
   text-indent: 3em;
 }
-ul {
+/*ul {
   color: black;
   padding: 1.222em;
   list-style-type: circle;
+}*/
+ol {
+  list-style-type: square;
 }
 
-ol {
-    list-style-type: square;
-    padding: 0.625em;
-}
 footer{
   float: left;
   font-size: 0.5625em;
@@ -56,34 +55,57 @@ h3{
   font-size: 1.40625em;
   font-weight: 400;
 }
-
-#monday{
-  float: left;
-  padding: 1.222em 1em;
-}
-#tuesday{
-  float: left;
-  padding: 1.222em 1em;
-}
-#wednesday{
-  float: left;
-  padding: 1.222em 1em;
-}
-#thursday{
-  float: left;
-  padding: 1.222em 1em;
-}
-#friday{
+#monday,#tuesday,#wednesday,#thursday,#friday{
   float: left;
   padding: 1.222em 1em;
 }
 #aclasses{
   display:flex;
   float: left;
+  justify-content: center;
+  flex-flow: row wrap;
 }
-.fcar,.tcar{
-  width: 25%;
+#contentd{
+  background-color: ;
+}
+.tcar{
+  width: 41%;
+  background-color: green;
 }
 .dcar{
-  width: 35%;
+  width: 50%;
+  background-color: lightblue;
+}
+.fcar{
+  width: 45%;
+  background-color: lightgray;
+}
+#tesla,#delorean,#ford {
+  padding: 1.222em 1em 1.222em;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: black;
+  color: white;
+  width: 65%;
+}
+#tesla li{
+  padding-left: 1.222em;
+}
+#tesla p{
+  padding-top: 1.222em;
+  width: 50em;
+}
+#delorean li{
+  padding-left: 1.222em;
+}
+#delorean p{
+  padding-top: 1.222em;
+  width: 50em;
+}
+#ford li{
+  padding-left: 1.222em;
+}
+#ford p{
+  padding-top: 1.222em;
+  width: 50em;
 }
