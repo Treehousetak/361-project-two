@@ -11,7 +11,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* 1em = 18px
 1 lead = 22px
 Visit www.ModularScale.com  */
-
 html {
   font-size: 1.125em;
   line height: 120%;
@@ -29,7 +28,6 @@ p {
 ol {
   list-style-type: square;
 }
-
 footer{
   float: left;
   font-size: 0.5625em;
@@ -39,7 +37,6 @@ footer{
 h2,h3,h4,h5,h6{
   padding: 0.625em 1.222em 0.625em 0em
 }
-
 h1{
   font-size: 2.8125em;
   font-weight: 900;
@@ -49,7 +46,6 @@ h1{
 h2{
   font-size: 1.6875em;
   font-weight: 700;
-
 }
 h3{
   font-size: 1.40625em;
@@ -60,10 +56,16 @@ h3{
   padding: 1.222em 1em;
 }
 #aclasses{
-  display:flex;
   float: left;
-  justify-content: center;
-  flex-flow: row wrap;
+  width: 100%;
+}
+#titler{
+  text-align: center;
+  margin: 0 auto;
+}
+#contentc {
+  float: left;
+  padding:1.222em;
 }
 #contentd{
   background-color: silver;
@@ -92,11 +94,18 @@ h3{
   .carimg{
     max-width: 40%;
   }
+  #contentc{
+    padding: 1em;
+    width: 80s%;
+  }
 }
 @media screen and (min-width: 1000px) {
   #contentd p,li{
     width: 70%;
     margin: 0 auto;
   }
-
+  #contentc p,h3{
+    width: 50%;
+    margin: 0 auto;
   }
+}
