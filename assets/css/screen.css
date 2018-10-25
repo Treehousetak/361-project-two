@@ -49,7 +49,8 @@ h2{
 }
 h3{
   font-size: 1.40625em;
-  font-weight: 400;
+  font-weight: 600;
+  font-style: italic;
 }
 #monday,#tuesday,#wednesday,#thursday,#friday{
   float: left;
@@ -59,9 +60,14 @@ h3{
   float: left;
   width: 100%;
 }
-#titler{
+.Rintro{
   text-align: center;
-  margin: 0 auto;
+  padding: 0em 1em 0em 1em;
+}
+#contentr li,h2,h3{
+  font-size: 1em;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 #contentc {
   float: left;
@@ -70,6 +76,7 @@ h3{
 #contentd{
   background-color: silver;
   border-radius: 3em;
+  list-style-type: none;
 }
 #contentd p{
   padding: 1.222em;
@@ -83,6 +90,7 @@ h3{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  font-size: 2em;
 }
 .carimg{
   max-width: 33%
@@ -94,9 +102,18 @@ h3{
   .carimg{
     max-width: 40%;
   }
+  .banners{
+    font-size: 1em;
+  }
   #contentc{
     padding: 1em;
     width: 80s%;
+  }
+  .Rintro{
+    font-size: 1.1em;
+  }
+  #contentr h2,h3,li{
+    font-size: 1em;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -107,5 +124,10 @@ h3{
   #contentc p,h3{
     width: 50%;
     margin: 0 auto;
+  }
+  #contentr h3,li{
+    margin: 0;
+    padding-left: 1.222em;
+    width: 80%
   }
 }
