@@ -15,7 +15,7 @@ Visit www.ModularScale.com  */
 /*General rules for all websites below */
 html {
   font-size: 1.125em;
-  line height: 120%;
+  line-height: 120%;
   padding: 1.222em 1em;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
@@ -114,7 +114,7 @@ h3{
   }
   #contentc{
     padding: 1em;
-    width: 80s%;
+    width: 80%;
   }
   .Rintro{
     font-size: 1.1em;
@@ -122,7 +122,6 @@ h3{
   #contentr h2,h3,li{
     font-size: 1em;
   }
-}
 @media screen and (min-width: 1000px) {
   #contentd p,li{
     width: 70%;
