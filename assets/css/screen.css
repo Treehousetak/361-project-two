@@ -66,46 +66,30 @@ h3{
   flex-flow: row wrap;
 }
 #contentd{
-  background-color: ;
+  background-color: silver;
+  border-radius: 3em;
 }
-.tcar{
-  width: 41%;
-  background-color: green;
+#contentd p{
+  padding: 1.222em;
 }
-.dcar{
-  width: 50%;
-  background-color: lightblue;
+#brand{
+  padding: 1.222em;
 }
-.fcar{
-  width: 45%;
-  background-color: lightgray;
-}
-#tesla,#delorean,#ford {
-  padding: 1.222em 1em 1.222em;
-  display: flex;
-  flex-flow: row wrap;
+.banners{
   background-color: black;
-  color: white;
-  width: 65%;
+  color: silver;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
-#tesla li{
-  padding-left: 1.222em;
+.carimg{
+  max-width: 33%
 }
-#tesla p{
-  padding-top: 1.222em;
-  width: 50em;
-}
-#delorean li{
-  padding-left: 1.222em;
-}
-#delorean p{
-  padding-top: 1.222em;
-  width: 50em;
-}
-#ford li{
-  padding-left: 1.222em;
-}
-#ford p{
-  padding-top: 1.222em;
-  width: 50em;
+@media screen and (max-width: 550px) {
+  #contentd h2{
+    font-size: 1.2em;
+  }
+  .carimg{
+    max-width: 40%;
+  }
 }
