@@ -35,9 +35,10 @@ h2,h3,h4,h5,h6{
   padding: 0.625em 1.222em 0.625em 0em
 }
 h1{
-  font-size: 2.8125em;
+  font-size: 2.253125em;
   font-weight: 900;
   padding-top: 1.222em;
+  line-height: 100%;
   padding-bottom: 1.222em;
 }
 h2{
@@ -62,7 +63,7 @@ h3{
 /* Rintro is the header of the resume page */
 .Rintro{
   text-align: center;
-  padding: 0em 1em 0em 1em;
+  padding: 0.5em 1em 0em 1em;
 }
 /*contentr is the main of the resume page
   contentc is the main of the fall_courses page
@@ -115,6 +116,9 @@ h3{
   #contentc{
     padding: 1em;
     width: 80%;
+  }
+  #ctitle{
+  font-size: 1.5em;
   }
   .Rintro{
     font-size: 1.1em;
