@@ -100,7 +100,7 @@ h3{
 /* carimg class is for all the car images for dream cars page */
 .carimg{
   max-width: 50%;
-  max-height: 20%
+  max-height: 10em;
 }
 
 /*media queries below*/
