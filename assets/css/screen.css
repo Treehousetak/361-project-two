@@ -109,6 +109,7 @@ h3{
   }
   .carimg{
     max-width: 40%;
+    max-height: 20%;
   }
   .banners{
     font-size: 1em;
