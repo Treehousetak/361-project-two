@@ -43,6 +43,7 @@ h1{
 }
 h2{
   font-size: 1.6875em;
+  line-height: 100%;
   font-weight: 700;
 }
 h3{
@@ -68,21 +69,21 @@ h3{
 /*contentr is the main of the resume page
   contentc is the main of the fall_courses page
   contentd is the main of the dreamcars page */
-#contentr li,h2,h3{
+#resume #content li,h2,h3{
   font-size: 1em;
   list-style-type: circle;
   list-style-position: inside;
 }
-#contentc {
+#courses #content {
   float: left;
   padding:1.222em;
 }
-#contentd{
+#cars #content{
   background-color: silver;
   border-radius: 3em;
   list-style-type: none;
 }
-#contentd p{
+#cars #content p{
   padding: 1.222em;
 }
 #brand{
@@ -105,7 +106,7 @@ h3{
 
 /*media queries below*/
 @media screen and (max-width: 550px) {
-  #contentd h2{
+  #cars #content h2{
     font-size: 1.2em;
   }
   .carimg{
@@ -115,29 +116,29 @@ h3{
   .banners{
     font-size: 1em;
   }
-  #contentc{
+  #courses #content{
     padding: 1em;
     width: 80%;
   }
   #ctitle{
   font-size: 1.5em;
   }
-  .Rintro{
+  .rintro{
     font-size: 1.1em;
   }
-  #contentr h2,h3,li{
+  #resume #content h2,h3,li{
     font-size: 1em;
   }
 @media screen and (min-width: 1000px) {
-  #contentd p,li{
+  #cars #content p,li{
     width: 70%;
     margin: 0 auto;
   }
-  #contentc p,h3{
+  #courses #content p,h3{
     width: 50%;
     margin: 0 auto;
   }
-  #contentr h3,li{
+  #resume #content h3,li{
     margin: 0;
     padding-left: 1.222em;
     width: 80%
