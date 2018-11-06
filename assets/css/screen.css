@@ -9,45 +9,49 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 /* Read Mark Hurst */
 /* 1em = 16px
-1 lead = 22px
 Visit www.ModularScale.com  */
+/* Scale Factor = 1.2 aka 6/5 Minor Third*/
 
 /*General rules for all websites below */
 html {
-  font-size: 1.125em;
-  line-height: 120%;
-  padding: 1.222em 1em;
+  font-size: 1.125em; /*18px = 1.125em*/
+  line-height: 1.5em; /*24px = 1.5em*/
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 p {
   text-indent: 3em;
+  padding: 0em 1.125em 1.333333em 1.125em;
 }
 ol {
   list-style-type: square;
+  list-style-position: inside;
+  padding: 0em 1.125em 1.3333333em 0em;
+}
+li{
+  padding: 0em 1.125em 0em 1.125em;
 }
 footer{
   float: left;
-  font-size: 0.5625em;
+  font-size: 0.46875em; /*1.125 / 2.4 */
   font-stretch: condensed;
   padding: 1em;
 }
-h2,h3,h4,h5,h6{
-  padding: 0.625em 1.222em 0.625em 0em
-}
 h1{
-  font-size: 2.253125em;
+  font-size: 1.7222222em;
   font-weight: 900;
-  padding-top: 1.222em;
-  line-height: 100%;
-  padding-bottom: 1.222em;
+  line-height: 1.54815385;
+  padding: 0.77419355em 1.125em 1.5483871em 1.125em;
 }
 h2{
-  font-size: 1.6875em;
-  line-height: 100%;
+  font-size: 1.44444444em;
+  line-height: 1.84615385em;
+  padding: 0.92307692em 1.125em 0.92307692em 1.125em;
   font-weight: 700;
 }
 h3{
-  font-size: 1.40625em;
+  font-size: 1.2222222em;
+  line-height: 1.09090909em;
+  padding: 1.09090909em 1.125em 0em 1.125em;
   font-weight: 600;
   font-style: italic;
 }
@@ -55,11 +59,10 @@ h3{
 /*Fall Courses Rules */
 #monday,#tuesday,#wednesday,#thursday,#friday{
   float: left;
-  padding: 1.222em 1em;
+  padding-right: 1em;
 }
 #aclasses{
   float: left;
-  width: 100%;
 }
 /* Rintro is the header of the resume page */
 .rintro{
@@ -69,14 +72,12 @@ h3{
 /*contentr is the main of the resume page
   contentc is the main of the fall_courses page
   contentd is the main of the dreamcars page */
-#resume #content li,h2,h3{
-  font-size: 1em;
+#resume #content li{
   list-style-type: circle;
   list-style-position: inside;
 }
 #courses #content {
   float: left;
-  padding:1.222em;
 }
 #cars #content{
   background-color: silver;
@@ -84,50 +85,46 @@ h3{
   list-style-type: none;
 }
 #cars #content p{
-  padding: 1.222em;
+  padding: 1.3333em 1.125em 1.33333em 1.125em;
 }
 #brand{
-  padding: 1.222em;
+  padding-left: 1.35em; /*1.125 * 1.2 */
 }
 /*banners class is for all the banners in the dream cars page */
 .banners{
   background-color: black;
   color: silver;
   display: flex;
+  font-size: 1.7222222em;
   justify-content: space-between;
   margin: 0 auto;
-  font-size: 2em;
 }
 /* carimg class is for all the car images for dream cars page */
 .carimg{
-  max-width: 50%;
-  max-height: 10em;
+  max-width: 60%;
+  max-height: 8em;
 }
-
 /*media queries below*/
-@media screen and (max-width: 550px) {
-  #cars #content h2{
-    font-size: 1.2em;
-  }
+@media screen and (max-width: 600px) {
   .carimg{
     max-width: 40%;
-    max-height: 10em;
+    max-height: 8em;
   }
   .banners{
-    font-size: 1em;
+    font-size: 1.125em;
   }
   #courses #content{
-    padding: 1em;
+    /*padding: 1em;*/
     width: 80%;
   }
   #ctitle{
   font-size: 1.5em;
   }
   .rintro{
-    font-size: 1.1em;
+    /*font-size: 1.1em;*/
   }
   #resume #content h2,h3,li{
-    font-size: 1em;
+    /*font-size: 1em;*/
   }
 @media screen and (min-width: 1000px) {
   #cars #content p,li{
@@ -140,7 +137,7 @@ h3{
   }
   #resume #content h3,li{
     margin: 0;
-    padding-left: 1.222em;
+    /*padding-left: 1.222em;*/
     width: 80%
   }
 }
