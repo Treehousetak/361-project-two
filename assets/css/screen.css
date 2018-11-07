@@ -14,21 +14,21 @@ Visit www.ModularScale.com  */
 
 /*General rules for all websites below */
 html {
-  font-size: 1.125em; /*18px = 1.125em*/
-  line-height: 1.5em; /*24px = 1.5em*/
+  font-size: 18px; /*18px = 1em*/
+  line-height: 24px; /*24px = 1em*/
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 p {
   text-indent: 3em;
-  padding: 0em 1.125em 1.333333em 1.125em;
+  padding: 0em 1em 1.333333em 1em;
 }
 ol {
   list-style-type: square;
   list-style-position: inside;
-  padding: 0em 1.125em 1.3333333em 0em;
+  padding: 0em 1em 1.3333333em 0em;
 }
 li{
-  padding: 0em 1.125em 0em 1.125em;
+  padding: 0em 1em 0em 1em;
 }
 footer{
   float: left;
@@ -40,23 +40,30 @@ h1{
   font-size: 1.7222222em;
   font-weight: 900;
   line-height: 1.54815385;
-  padding: 0.77419355em 1.125em 1.5483871em 1.125em;
+  padding: 0.77419355em 1em 1.5483871em 1em;
 }
 h2{
   font-size: 1.44444444em;
   line-height: 1.84615385em;
-  padding: 0.92307692em 1.125em 0.92307692em 1.125em;
+  padding: 0.92307692em 1em 0.92307692em 1em;
   font-weight: 700;
 }
 h3{
   font-size: 1.2222222em;
   line-height: 1.09090909em;
-  padding: 1.09090909em 1.125em 0em 1.125em;
+  padding: 1.09090909em 1em 0em 1em;
   font-weight: 600;
   font-style: italic;
 }
+body {
+  background-color: rgb(149, 125, 125);
+}
 /*Specifc Rules Below */
 /*Fall Courses Rules */
+#content{
+  font-size: 1em;
+  line-height: 1.3333333em;
+}
 #monday,#tuesday,#wednesday,#thursday,#friday{
   float: left;
   padding-right: 1em;
@@ -80,7 +87,8 @@ h3{
   float: left;
 }
 #cars #content{
-  background-color: silver;
+  background-color: rgb(109, 86, 86);
+  color: rgb(235, 219, 219);
   border-radius: 3em;
   list-style-type: none;
 }
@@ -92,52 +100,61 @@ h3{
 }
 /*banners class is for all the banners in the dream cars page */
 .banners{
-  background-color: black;
-  color: silver;
+  background-color: rgb(149, 125, 125); /*rgb(188, 166, 166);*/
+  color: rgb(67, 44, 44);
   display: flex;
-  font-size: 1.7222222em;
+  font-size: 1.44444444em;
   justify-content: space-between;
   margin: 0 auto;
 }
 /* carimg class is for all the car images for dream cars page */
 .carimg{
-  max-width: 60%;
+  max-width: 100%;
   max-height: 8em;
 }
 /*media queries below*/
 @media screen and (max-width: 600px) {
   .carimg{
-    max-width: 40%;
-    max-height: 8em;
+    max-width: 100%;
+    max-height: 4em;
   }
-  .banners{
-    font-size: 1.125em;
+  .banners h2{
+    font-size: 1em;
+    padding: 0em;
   }
-  #courses #content{
-    /*padding: 1em;*/
-    width: 80%;
-  }
-  #ctitle{
-  font-size: 1.5em;
+  #resume h1{
+    font-size: 1.44444444em;
   }
   .rintro{
-    /*font-size: 1.1em;*/
+  font-size: 0.83333333em;
+}
+  #content h1{
+    font-size: 1.4444444em;
   }
-  #resume #content h2,h3,li{
-    /*font-size: 1em;*/
+  #content h2{
+    font-size: 1.2222222em;
   }
+  #content h3{
+    font-size: 1em;
+  }
+  #content{
+    font-size: 0.833333333em;
+  }
+  .cintro h1{
+    font-size: 1.44444444em;
+  }
+  .cintro h2{
+    font-size: 1.222222222em;
+  }
+  .cintro
 @media screen and (min-width: 1000px) {
   #cars #content p,li{
-    width: 70%;
     margin: 0 auto;
   }
   #courses #content p,h3{
-    width: 50%;
     margin: 0 auto;
   }
   #resume #content h3,li{
     margin: 0;
-    /*padding-left: 1.222em;*/
-    width: 80%
   }
 }
