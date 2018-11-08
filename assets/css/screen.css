@@ -14,74 +14,56 @@ Visit www.ModularScale.com  */
 
 /*General rules for all websites below */
 html {
-  font-size: 18px; /*18px = 1em*/
-  line-height: 24px; /*24px = 1em*/
+  font-size: 1.125em; /*18px = 1.125em*/
+  line-height: 1.25em; /*24px = 1.5em*/
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 p {
-  text-indent: 3em;
-  padding: 0em 1em 1.333333em 1em;
+  text-indent: 1.875em; /*30px = 1/2 inch, 30/16= 1.875em */
+  padding: 0em 1.125em 1.25em 1.125em; /* 20px = 1.25em */
 }
 ol{
   list-style-type: square;
   list-style-position: inside;
-  padding: 0em 1em 1.3333333em 1em;
+  padding: 0em 1.125em 1.25em 1.125em;
 }
 li{
-  padding: 0em 1em 0em 1em;
+  padding: 0em 1.125em 0em 1.125em;
 }
 footer{
   float: left;
-  font-size: 0.75em; /*1.125 / 2.4 */
+  font-size: 0.84375em; /*1.125 * 0.75 */
   font-stretch: condensed;
   padding: 0em;
 }
 h1{
-  font-size: 1.7222222em;
+  font-size: 1.9375em; /* 18px * 1.222 = 22 * 1.2222 = 26 * 1.2222 = 31 / 16 = 1.9375 */
   font-weight: 900;
-  line-height: 1.54815385em;
-  padding: 0.77419355em 1em 1.5483871em 1em;
+  line-height: 2.5em; /*1.25 * 2 = 2.5 */
+  padding: 1.25em 1.125em 2.5em 1.125em; /* 40 / 16 = 2.5 */
 }
 h2{
-  font-size: 1.44444444em;
-  line-height: 1.84615385em;
-  padding: 0.92307692em 1em 0.92307692em 1em;
+  font-size: 1.625em; /* 18px * 1.222 = 22 * 1.2222 = 26 / 16 = 1.625 */
+  line-height: 2.5em;
+  padding: 1.25em 1.125em 1.25em 1.125em;
   font-weight: 700;
 }
 h3{
-  font-size: 1.2222222em;
-  line-height: 1.09090909em;
-  padding: 1.09090909em 1em 0em 1em;
+  font-size: 1.375em; /* 18px * 1.222 = 22 / 16 = 1.375 */
+  line-height: 2.5em;
+  padding: 1.25em 1.125em 0em 1em;
   font-weight: 600;
   font-style: italic;
 }
 h4{
-  font-size: 1em;
-  line-height: 1.3333333em;
-  padding: 1.0909090909em 1em 0em 1em;
+  font-size: 1.125em; /* 18px / 16 = 1.125 */
+  line-height: 1.25em;
+  padding: 1.25em 1.125em 0em 1.125em;
 }
 body {
   background-color: #99918e;
 }
-.navigation{
-  font-size: 1.4444444em;
-  padding: 0.92307692em 1em 0.92307692em 1em;
-  text-align: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  border: 0.4em ridge #6c5c56;
-}
-.links{
-  padding: 0.3em;
-  color: #bda298;
-  text-decoration: none;
-  background-color:#63707a;
-  border-radius: 0.2em;
-}
-.links-b{
-  color: #384045;
-}
+/* 0.92, 1.09, 1.33333 = 1.5 */
 a:hover, a:focus{
   color: white;
 }
@@ -89,87 +71,120 @@ a:active {
   color: #3b3c3d;
 }
 /*Specifc Rules Below */
-/*Fall Courses Rules */
+/*#resume is the body of the resume page
+  #courses is the body of the fallcourses page
+  #cars is the body of the dreamcars page
+  #content is the main of all the pages*/
 #content{
   background-color: #bda298;
-  font-size: 1em;
-  line-height: 1.3333333em;
-  padding: 0em 18em 0em 18em;
+  font-size: 1.125em;
+  line-height: 1.25em;
+  padding: 0em 20.25em 0em 20.25em;
 }
 #content h2 {
   text-decoration: underline;
 }
+/*brand is the links to car brand websites */
 #brand{
-  padding-bottom: 1em;
+  padding-bottom: 1.125em;
 }
+/*fall courses week day ids */
 #monday,#tuesday,#wednesday,#thursday,#friday{
   float: left;
-  padding: 0em 1em 0em 1em;
+  padding: 0em 1.125em 0em 1.125em;
 }
+/*fall courses classes descriptions */
 #classes{
   float: left;
 }
-/* Rintro is the header of the resume page */
-/*contentr is the main of the resume page
-  contentc is the main of the fall_courses page
-  contentd is the main of the dreamcars page */
 #resume #content li{
   list-style-type: circle;
   list-style-position: inside;
 }
+/*personal is the personal section of the resume page */
 #personal{
-  padding-bottom: 1em;
+  padding-bottom: 1.125em;
 }
 #courses #content {
   float: left;
 }
 #courses #content ul{
 list-style-type: square;
-  padding: 0em 1em 0em 1em;
+  padding: 0em 1.125em 0em 1.125em;
   list-style-position: inside;
 }
 #cars #content{
   list-style-type: none;
 }
 #cars #content p{
-  padding: 1.3333em 1em 1.33333em 1em;
+  padding: 1.25em 1.125em 1.25em 1.125em;
 }
-/*banners class is for all the banners in the dream cars page */
+/*weekday is the class for the weekday elements in fall courses */
 .weekday{
-  border-bottom: 0.2em solid black;
+  border-bottom: 0.1777777em solid black;
 }
+/*rintro class is for the first h1 and h3 tag of the resume page */
 .rintro{
   text-align: center;
-  padding: 0.5em 1em 0em 1em;
+  padding: 0.5625em 1.125em 0em 1.125em; /*1.125 / 2 = 0.5625 */
 }
+/*banners class is for all the banners in the dream cars page */
 .banners{
   background-color: #bdb498;
   color: rgb(67, 44, 44);
-  border: 0.2em double black;
+  border: 0.1777777em double black;
   display: flex;
-  font-size: 1.44444444em;
   justify-content: space-between;
   margin: 0 auto;
 }
-.banners h2{
-  padding: 0.92307692em 1em 0.92307692em 0.75em;
+/*navigation is for the top navigation part of all pages */
+.navigation{
+  font-size: 1.625em;
+  padding: 1.25em 1.125em 1.25em 1.125em;
+  line-height: 1.25em;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border: 0.35em ridge #6c5c56;
+}
+/*links is for the nav links */
+.links{
+  padding: 0.17777em; /* 16 * 0.01111111 */
+  color: #bda298;
+  text-decoration: none;
+  background-color:#63707a;
+  border-radius: 0.17777em; /* 16 * 0.01111111 */
+}
+/*links-b is for the brand links */
+.links-b{
+  color: #384045;
 }
 /* carimg class is for all the car images for dream cars page */
 .carimg{
   max-width: 100%;
-  max-height: 8em;
+  max-height: 9em;
 }
 /*media queries below*/
 @media screen and (max-width: 1300px) {
   .navigation{
-    font-size: 1.2222222em;
+    font-size: 1.375em;
   }
   .carimg{
     max-width: 100%;
-    max-height: 6em;
+    max-height: 6.75em; /* 1.125 * 6 */
   }
   #content {
-    padding: 0em 8em 0em 8em;
+    padding: 0em 9em 0em 9em;
+  }
+  #content h1{
+    font-size: 1.625em;
+  }
+  #content h2{
+    font-size: 1.375em;
+  }
+  #content h3{
+    font-size: 1.125em;
   }
 }
 @media screen and (max-width: 800px) {
@@ -178,35 +193,35 @@ list-style-type: square;
   }
   .carimg{
     max-width: 100%;
-    max-height: 4em;
+    max-height: 4.5em; /* 1.125 * 4 */
   }
   .banners h2{
-    font-size: 1em;
-    padding: 0em 0em 0em 0.5em;
+    font-size: 1.125em;
+    padding: 0em 0em 0em 0.5625em;
   }
   .links{
     border-radius: 0em;
   }
   .navigation {
-    font-size: 1em;
+    font-size: 1.125em;
     flex-flow: column;
   }
   #resume h1{
-    font-size: 1.44444444em;
+    font-size: 1.625em;
   }
   .rintro{
-  font-size: 0.83333333em;
+  font-size: 0.9375em; /* 1.125 / 1.2 */
  }
   #content h1{
-    font-size: 1.4444444em;
+    font-size: 1.625em;
   }
   #content h2{
-    font-size: 1.2222222em;
+    font-size: 1.375em;
   }
   #content h3{
-    font-size: 1em;
+    font-size: 1.125em;
   }
   #content{
-    font-size: 0.833333333em;
+    font-size: 0.9375em;
   }
 }
