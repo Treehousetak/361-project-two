@@ -30,11 +30,6 @@ ol{
 li{
   padding: 0em 1em 0em 1em;
 }
-#content ul{
-list-style-type: square;
-  padding: 0em 1em 0em 1em;
-  list-style-position: inside;
-}
 footer{
   float: left;
   font-size: 0.75em; /*1.125 / 2.4 */
@@ -99,11 +94,13 @@ a:active {
   background-color: #bda298;
   font-size: 1em;
   line-height: 1.3333333em;
-  padding: 0em 20em 0em 20em;
-
+  padding: 0em 18em 0em 18em;
 }
-#brand a:hover{
-  color: white;
+#content h2 {
+  text-decoration: underline;
+}
+#brand{
+  padding-bottom: 1em;
 }
 #monday,#tuesday,#wednesday,#thursday,#friday{
   float: left;
@@ -120,14 +117,16 @@ a:active {
   list-style-type: circle;
   list-style-position: inside;
 }
+#personal{
+  padding-bottom: 1em;
+}
 #courses #content {
   float: left;
 }
-.weekday{
-  border-bottom: 0.2em solid black;
-}
-#content h2 {
-  text-decoration: underline;
+#courses #content ul{
+list-style-type: square;
+  padding: 0em 1em 0em 1em;
+  list-style-position: inside;
 }
 #cars #content{
   list-style-type: none;
@@ -136,11 +135,13 @@ a:active {
   padding: 1.3333em 1em 1.33333em 1em;
 }
 /*banners class is for all the banners in the dream cars page */
+.weekday{
+  border-bottom: 0.2em solid black;
+}
 .rintro{
   text-align: center;
   padding: 0.5em 1em 0em 1em;
 }
-
 .banners{
   background-color: #bdb498;
   color: rgb(67, 44, 44);
@@ -159,7 +160,14 @@ a:active {
   max-height: 8em;
 }
 /*media queries below*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
+  .navigation{
+    font-size: 1.2222222em;
+  }
+  .carimg{
+    max-width: 100%;
+    max-height: 6em;
+  }
   #content {
     padding: 0em 8em 0em 8em;
   }
@@ -174,10 +182,14 @@ a:active {
   }
   .banners h2{
     font-size: 1em;
-    padding: 0em;
+    padding: 0em 0em 0em 0.5em;
+  }
+  .links{
+    border-radius: 0em;
   }
   .navigation {
     font-size: 1em;
+    flex-flow: column;
   }
   #resume h1{
     font-size: 1.44444444em;
