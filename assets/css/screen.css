@@ -63,7 +63,7 @@ body {
   padding: 0.92307692em 1em 0.92307692em 1em;
   text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   border: 0.4em ridge #6c5c56;
 }
@@ -74,8 +74,14 @@ body {
   background-color:#63707a;
   border-radius: 0.2em;
 }
-.navigation a:hover {
+.links-b{
+  color: #384045;
+}
+a:hover {
   color: white;
+}
+a:active {
+  color: #3b3c3d;
 }
 /*Specifc Rules Below */
 /*Fall Courses Rules */
@@ -83,6 +89,9 @@ body {
   background-color: #bda298;
   font-size: 1em;
   line-height: 1.3333333em;
+}
+#brand a:hover{
+  color: white;
 }
 #monday,#tuesday,#wednesday,#thursday,#friday{
   float: left;
@@ -95,6 +104,9 @@ body {
 .rintro{
   text-align: center;
   padding: 0.5em 1em 0em 1em;
+}
+.rintro h2{
+  text-decoration: none;
 }
 /*contentr is the main of the resume page
   contentc is the main of the fall_courses page
@@ -119,7 +131,7 @@ body {
 .banners{
   background-color: #bdb498;
   color: rgb(67, 44, 44);
-  border: 0.5em double black;
+  border: 0.2em double black;
   display: flex;
   font-size: 1.44444444em;
   justify-content: space-between;
