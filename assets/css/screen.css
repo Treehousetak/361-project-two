@@ -74,6 +74,9 @@ body {
   background-color:#63707a;
   border-radius: 0.2em;
 }
+.navigation a:hover {
+  color: white;
+}
 /*Specifc Rules Below */
 /*Fall Courses Rules */
 #content{
