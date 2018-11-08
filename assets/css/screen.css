@@ -39,7 +39,7 @@ footer{
 h1{
   font-size: 1.7222222em;
   font-weight: 900;
-  line-height: 1.54815385;
+  line-height: 1.54815385em;
   padding: 0.77419355em 1em 1.5483871em 1em;
 }
 h2{
@@ -56,11 +56,21 @@ h3{
   font-style: italic;
 }
 body {
-  background-color: rgb(149, 125, 125);
+  background-color: #99918e;
+}
+.navigation{
+  font-size: 1.4444444em;
+  padding: 0.92307692em 1em 0.92307692em 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 0.4em ridge #6c5c56;
 }
 /*Specifc Rules Below */
 /*Fall Courses Rules */
 #content{
+  background-color: #bda298;
   font-size: 1em;
   line-height: 1.3333333em;
 }
@@ -86,22 +96,20 @@ body {
 #courses #content {
   float: left;
 }
+#content h2 {
+  text-decoration: underline;
+}
 #cars #content{
-  background-color: rgb(109, 86, 86);
-  color: rgb(235, 219, 219);
-  border-radius: 3em;
   list-style-type: none;
 }
 #cars #content p{
   padding: 1.3333em 1.125em 1.33333em 1.125em;
 }
-#brand{
-  padding-left: 1.35em; /*1.125 * 1.2 */
-}
 /*banners class is for all the banners in the dream cars page */
 .banners{
-  background-color: rgb(149, 125, 125); /*rgb(188, 166, 166);*/
+  background-color: #bdb498;
   color: rgb(67, 44, 44);
+  border: 0.5em double black;
   display: flex;
   font-size: 1.44444444em;
   justify-content: space-between;
@@ -122,6 +130,9 @@ body {
     font-size: 1em;
     padding: 0em;
   }
+  .navigation {
+    font-size: 1em;
+  }
   #resume h1{
     font-size: 1.44444444em;
   }
@@ -140,13 +151,6 @@ body {
   #content{
     font-size: 0.833333333em;
   }
-  .cintro h1{
-    font-size: 1.44444444em;
-  }
-  .cintro h2{
-    font-size: 1.222222222em;
-  }
-  .cintro
 @media screen and (min-width: 1000px) {
   #cars #content p,li{
     margin: 0 auto;
