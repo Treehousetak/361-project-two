@@ -156,8 +156,8 @@ list-style-type: square;
   background-color:#63707a;
   border-radius: 0.17777em; /* 16 * 0.01111111 */
 }
-/*links-b is for the brand links */
-.links-b{
+/*links_b is for the brand links */
+.links_b{
   color: #384045;
 }
 /* carimg class is for all the car images for dream cars page */
