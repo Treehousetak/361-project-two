@@ -10,7 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Read Mark Hurst */
 /* 1em = 16px
 Visit www.ModularScale.com  */
-/* Scale Factor = 1.2 aka 6/5 Minor Third*/
+/* Scale Factor = 1.2 aka 5:6 Minor Third*/
 
 /*General rules for all websites below */
 html {
@@ -33,23 +33,23 @@ li{
 footer{
   float: left;
   font-size: 0.84375em; /*1.125 * 0.75 */
-  font-stretch: condensed;
+  font-stretch: condensed;esume/
   padding: 0em;
 }
 h1{
-  font-size: 1.9375em; /* 18px * 1.222 = 22 * 1.2222 = 26 * 1.2222 = 31 / 16 = 1.9375 */
+  font-size: 1.625em; /* 18px * 1.222 = 22 * 1.2222 = 26 /16 = 1.625 */
   font-weight: 900;
   line-height: 2.5em; /*1.25 * 2 = 2.5 */
   padding: 1.25em 1.125em 2.5em 1.125em; /* 40 / 16 = 2.5 */
 }
 h2{
-  font-size: 1.625em; /* 18px * 1.222 = 22 * 1.2222 = 26 / 16 = 1.625 */
+  font-size: 1.375em; /* 18px * 1.222 = 22 / 16 = 1.375 */
   line-height: 2.5em;
   padding: 1.25em 1.125em 1.25em 1.125em;
   font-weight: 700;
 }
 h3{
-  font-size: 1.375em; /* 18px * 1.222 = 22 / 16 = 1.375 */
+  font-size: 1.125em; /* 18px / 16 = 1.125  */
   line-height: 2.5em;
   padding: 1.25em 1.125em 0em 1em;
   font-weight: 600;
@@ -79,7 +79,7 @@ a:active {
   background-color: #bda298;
   font-size: 1.125em;
   line-height: 1.25em;
-  padding: 0em 16em 0em 16em;
+  padding: 0em 30% 0em 30%;
 }
 #content h2 {
   text-decoration: underline;
@@ -139,7 +139,7 @@ list-style-type: square;
 }
 /*navigation is for the top navigation part of all pages */
 .navigation{
-  font-size: 1.625em;
+  font-size: 1.375em;
   padding: 1.25em 1.125em 1.25em 1.125em;
   line-height: 1.25em;
   text-align: center;
@@ -168,20 +168,20 @@ list-style-type: square;
 /*media queries below*/
 @media screen and (max-width: 1300px) {
   .navigation{
-    font-size: 1.375em;
+    font-size: 1.125em;
   }
   .carimg{
     max-width: 100%;
     max-height: 6.75em; /* 1.125 * 6 */
   }
   #content {
-    padding: 0em 9em 0em 9em;
+    padding: 0em 20% 0em 20%;
   }
   #content h1{
-    font-size: 1.625em;
+    font-size: 1.375em;
   }
   #content h2{
-    font-size: 1.375em;
+    font-size: 1.125em;
   }
   #content h3{
     font-size: 1.125em;
