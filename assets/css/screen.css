@@ -161,16 +161,16 @@ list-style-type: square;
   color: #384045;
 }
 /* carimg class is for all the car images for dream cars page */
-.carimg{
+#tcarimg, #dcarimg, #fcarimg{
   max-width: 100%;
   max-height: 9em;
 }
-.carimg2{
+#tcarimg2, #dcarimg2, #fcarimg2{
   max-width: 100%;
   max-height: 9em;
   display: none;
 }
-.carimg3{
+#tcarimg3, #dcarimg3, #fcarimg3{
   max-width: 100%;
   max-height: 9em;
   display: none;
