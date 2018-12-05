@@ -10,3 +10,12 @@
 document.addEventListener('DOMContentLoaded', function () {
   console.log("DOM Has loaded");
 });
+
+//Modify this to add a button to make text visible on click of a button
+menu_button.addEventListener('click', function(e){
+  nav_list.classList.toggle('visible');
+  e.preventDefault();
+});
+
+
+//Add either an automatic or manual slideshow in dreamcars
