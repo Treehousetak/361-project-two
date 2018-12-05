@@ -165,6 +165,16 @@ list-style-type: square;
   max-width: 100%;
   max-height: 9em;
 }
+.carimg2{
+  max-width: 100%;
+  max-height: 9em;
+  display: none;
+}
+.carimg3{
+  max-width: 100%;
+  max-height: 9em;
+  display: none;
+}
 /*media queries below*/
 @media screen and (max-width: 1300px) {
   .navigation{
