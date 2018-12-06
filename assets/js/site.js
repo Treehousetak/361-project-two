@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //dropdown menu below, m - monday, t - tuesday, w - wednesday, r - thursday, f - friday
+if (document.querySelector('#dropm')) {
 var dropm = document.querySelector('#dropm');
 var dropt = document.querySelector('#dropt');
 var dropw = document.querySelector('#dropw');
 var dropr = document.querySelector('#dropr');
 var dropf = document.querySelector('#dropf');
+
 
 //slideshow control variables
 var [a,b,c,d,e] = [false,false,false,false,false];
@@ -62,7 +64,9 @@ dropf.addEventListener('click', function() {
     e = false;
   }
 });
+}
 
+if(document.querySelector('.buttonback')) {
 var buttonB = document.querySelector('.buttonback');
 var buttonN = document.querySelector('.buttonnext');
 var buttonB2 = document.querySelector('.buttonback2');
@@ -192,3 +196,4 @@ buttonB3.addEventListener('click', function(){
     document.getElementById('fcarimg').style.display = "block";
   }
 });
+}
