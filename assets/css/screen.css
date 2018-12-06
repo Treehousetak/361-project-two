@@ -64,6 +64,15 @@ body {
   background-color: #99918e;
 }
 /* 0.92, 1.09, 1.33333 = 1.5 */
+a {
+  color: #63483e;
+}
+button {
+  float: right;
+  background-color: #63483e;
+  color: white;
+  height: 2em;
+}
 a:hover, a:focus{
   color: white;
 }
@@ -183,7 +192,7 @@ list-style-type: square;
   .navigation{
     font-size: 1.125em;
   }
-  .carimg{
+  #tcarimg, #dcarimg, #fcarimg, #tcarimg2, #dcarimg2, #fcarimg2, #tcarimg3, #dcarimg3, #fcarimg3{
     max-width: 100%;
     max-height: 6.75em; /* 1.125 * 6 */
   }
@@ -204,7 +213,7 @@ list-style-type: square;
   #content {
     padding: 0em;
   }
-  .carimg{
+  #tcarimg, #dcarimg, #fcarimg, #tcarimg2, #dcarimg2, #fcarimg2, #tcarimg3, #dcarimg3, #fcarimg3{
     max-width: 100%;
     max-height: 4.5em; /* 1.125 * 4 */
   }

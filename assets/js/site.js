@@ -63,8 +63,6 @@ dropf.addEventListener('click', function() {
   }
 });
 
-//slideshow below
-//slideshow variables
 var buttonB = document.querySelector('.buttonback');
 var buttonN = document.querySelector('.buttonnext');
 var buttonB2 = document.querySelector('.buttonback2');
@@ -72,7 +70,6 @@ var buttonN2 = document.querySelector('.buttonnext2');
 var buttonB3 = document.querySelector('.buttonback3');
 var buttonN3 = document.querySelector('.buttonnext3');
 
-//slideshow control variable
 var c1 = 0;
 var c2 = 0;
 var c3 = 0;
@@ -97,7 +94,6 @@ buttonN.addEventListener('click', function(){
     document.getElementById('tcarimg').style.display = "block";
   }
 });
-
 buttonB.addEventListener('click', function(){
   c1--;
   if (c1 <= -1) {
@@ -138,7 +134,6 @@ buttonN2.addEventListener('click', function(){
     document.getElementById('dcarimg').style.display = "block";
   }
 });
-
 buttonB2.addEventListener('click', function(){
   c2--;
   if (c2 <= -1) {
@@ -158,7 +153,6 @@ buttonB2.addEventListener('click', function(){
     document.getElementById('dcarimg').style.display = "block";
   }
 });
-
 //Ford slideshow below
 buttonN3.addEventListener('click', function(){
   c3++;
@@ -179,7 +173,6 @@ buttonN3.addEventListener('click', function(){
     document.getElementById('fcarimg').style.display = "block";
   }
 });
-
 buttonB3.addEventListener('click', function(){
   c3--;
   if (c3 <= -1) {
