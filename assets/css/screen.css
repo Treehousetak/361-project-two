@@ -93,6 +93,9 @@ a:active {
   float: left;
   padding: 0em 1.125em 0em 1.125em;
 }
+#mondayinfo, #tuesdayinfo, #wednesdayinfo, #thursdayinfo, #fridayinfo {
+  display: none;
+}
 /*fall courses classes descriptions */
 #classes{
   float: left;
