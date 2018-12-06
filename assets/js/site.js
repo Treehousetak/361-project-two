@@ -66,6 +66,7 @@ dropf.addEventListener('click', function() {
 });
 }
 
+//Slideshow for dreamcars page below
 if(document.querySelector('.buttonback')) {
 var buttonB = document.querySelector('.buttonback');
 var buttonN = document.querySelector('.buttonnext');
@@ -74,6 +75,7 @@ var buttonN2 = document.querySelector('.buttonnext2');
 var buttonB3 = document.querySelector('.buttonback3');
 var buttonN3 = document.querySelector('.buttonnext3');
 
+//Control variables. c1 for tesla, c2 for delorean, and c3 for ford. 
 var c1 = 0;
 var c2 = 0;
 var c3 = 0;
