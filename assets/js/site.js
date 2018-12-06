@@ -2,21 +2,17 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log("DOM Has loaded");
 });
 
-
-
-//Modify this to add a button to make text visible on click of a button
-//menu_button.addEventListener('click', function(e){
-//  nav_list.classList.toggle('visible');
-//  e.preventDefault();
-//});
-
+//dropdown menu below, m - monday, t - tuesday, w - wednesday, r - thursday, f - friday
 var dropm = document.querySelector('#dropm');
 var dropt = document.querySelector('#dropt');
 var dropw = document.querySelector('#dropw');
 var dropr = document.querySelector('#dropr');
 var dropf = document.querySelector('#dropf');
+
+//slideshow control variables
 var [a,b,c,d,e] = [false,false,false,false,false];
 
+//monday
 dropm.addEventListener('click', function() {
   if (a === false) {
     document.getElementById('mondayinfo').style.display = "block";
@@ -26,6 +22,7 @@ dropm.addEventListener('click', function() {
     a = false;
   }
 });
+//tuesday
 dropt.addEventListener('click', function() {
   if (b === false) {
     document.getElementById('tuesdayinfo').style.display = "block";
@@ -35,6 +32,7 @@ dropt.addEventListener('click', function() {
     b = false;
   }
 });
+//wednesday
 dropw.addEventListener('click', function() {
   if (c === false) {
     document.getElementById('wednesdayinfo').style.display = "block";
@@ -44,6 +42,7 @@ dropw.addEventListener('click', function() {
     c = false;
   }
 });
+//thursday
 dropr.addEventListener('click', function() {
   if (d === false) {
     document.getElementById('thursdayinfo').style.display = "block";
@@ -53,6 +52,7 @@ dropr.addEventListener('click', function() {
     d = false;
   }
 });
+//friday
 dropf.addEventListener('click', function() {
   if (e === false) {
     document.getElementById('fridayinfo').style.display = "block";
@@ -63,6 +63,8 @@ dropf.addEventListener('click', function() {
   }
 });
 
+//slideshow below
+//slideshow variables
 var buttonB = document.querySelector('.buttonback');
 var buttonN = document.querySelector('.buttonnext');
 var buttonB2 = document.querySelector('.buttonback2');
@@ -70,6 +72,7 @@ var buttonN2 = document.querySelector('.buttonnext2');
 var buttonB3 = document.querySelector('.buttonback3');
 var buttonN3 = document.querySelector('.buttonnext3');
 
+//slideshow control variable
 var c1 = 0;
 var c2 = 0;
 var c3 = 0;
